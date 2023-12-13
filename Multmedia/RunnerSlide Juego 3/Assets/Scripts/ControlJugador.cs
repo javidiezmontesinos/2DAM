@@ -22,7 +22,7 @@ public class ControlJugador : MonoBehaviour
     private AudioSource sonidoJugador;
     void Start()
     {
-        //vamos a dotar de RigidBody al personaje principal pero en código
+        //vamos a dotar de RigidBody al personaje principal pero en cï¿½digo
         rbJugador = GetComponent<Rigidbody>();
         Physics.gravity *= modificadorGravedad;
         animacionJugador = GetComponent<Animator>();
@@ -65,8 +65,8 @@ public class ControlJugador : MonoBehaviour
             sonidoJugador.PlayOneShot(sonidoChoque, 1.0f);
 
 
-            // Cuando el jugador entre en colisión con otro objeto,
-            // el valor de estar en el suelo pasará a true
+            // Cuando el jugador entre en colisiï¿½n con otro objeto,
+            // el valor de estar en el suelo pasarï¿½ a true
         }
     }
 

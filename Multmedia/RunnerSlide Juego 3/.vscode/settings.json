@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "JuegoSaltos.sln"
+    "dotnet.defaultSolution": "RunnerSlide Juego 3.sln"
 }
