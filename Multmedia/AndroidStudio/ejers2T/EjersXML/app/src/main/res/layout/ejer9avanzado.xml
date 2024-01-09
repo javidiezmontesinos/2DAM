@@ -23,7 +23,8 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center|end"
-        android:background="#FFEB3B"/>
+        android:background="#FFEB3B" />
+
     <View
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -63,5 +64,6 @@
         android:layout_height="100dp"
         android:layout_gravity="top|start"
         android:background="#6E800B"/>
+
 
 </FrameLayout>
