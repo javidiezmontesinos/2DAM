@@ -1,16 +1,15 @@
-package mapeoORMTienda;
+package mapeoInstituto;
 
 
-import java.util.List;
+import java.sql.Date;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.context.internal.ThreadLocalSessionContext;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
-import org.hibernate.query.Query;
 
-public class MainTienda {
+public class Main {
 
 	public static void main(String[] args) {
 		
@@ -27,7 +26,7 @@ public class MainTienda {
 		
 		try {
 			// Crea el objeto fabricante
-			FabricanteTienda fabricante = new FabricanteTienda("Google España");
+			Alumno alumnos = new Alumno("Pepe","Gomez","De la cruz",Date.valueOf("1999-03-05"),true,"638436056");
 			
 			
 			// Obtener la sesion actual
@@ -37,30 +36,13 @@ public class MainTienda {
 			session.beginTransaction();
 			
 			// Guardar objeto en la base de datos
-			session.save(fabricante);
+			session.save(alumnos);
 			
 			// Hacer el commit de la transaccion
 			session.getTransaction().commit();
 			
 			// Imprimir fabricante guardado en la base datatos
-			System.out.println("Cliente Fabricante : " + fabricante);
-			
-			// Crear consulta HQL para seleccionar todos los registros de la tabla fabricante
-			String hql = "FROM FabricanteTienda";
-			Query<FabricanteTienda> query = session.createQuery(hql, FabricanteTienda.class);
-
-
-
-            // Ejecutar consulta y obtener resultados
-            List<FabricanteTienda> fabricantes = query.list();
-
-
-            // Imprimir resultados
-            System.out.println("Registros en la tabla fabricante:");
-            for (FabricanteTienda f : fabricantes) {
-                System.out.println(f.toString());
-            }
-
+			System.out.println("Cliente Fabricante : " + alumnos);
 			
 		} catch (Exception e) {
 			e.printStackTrace();

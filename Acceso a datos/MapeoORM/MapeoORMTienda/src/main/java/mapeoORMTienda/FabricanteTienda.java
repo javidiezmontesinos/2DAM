@@ -14,7 +14,7 @@ import java.sql.Date;
 public class FabricanteTienda {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "codigo")
 	private int id;
 
 	@Column(name = "nombre")
