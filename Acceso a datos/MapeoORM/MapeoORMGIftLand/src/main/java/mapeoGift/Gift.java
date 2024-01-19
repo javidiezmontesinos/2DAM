@@ -10,7 +10,7 @@ public class Gift {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "idjuego")
+	@Column(name = "id")
 	private int id;
 
 	@Column(name = "nombre")
