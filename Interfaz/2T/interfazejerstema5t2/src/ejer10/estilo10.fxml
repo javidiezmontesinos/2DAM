@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #808080;" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" text="Boton1" />
+            <Separator orientation="VERTICAL" prefHeight="27.0" prefWidth="4.0" />
+            <Button mnemonicParsing="false" text="Boton2" />
+            <Separator orientation="VERTICAL" prefHeight="27.0" prefWidth="4.0" />
+            <Button mnemonicParsing="false" text="Boton3" />
+         </children>
+         <padding>
+            <Insets left="60.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: purple;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" text="Opcion A" />
+            <Separator orientation="VERTICAL" prefHeight="27.0" prefWidth="4.0" />
+            <Button mnemonicParsing="false" text="Opcion B" />
+            <Separator orientation="VERTICAL" prefHeight="27.0" prefWidth="4.0" />
+            <Button mnemonicParsing="false" text="Opcion C" />
+         </children>
+         <padding>
+            <Insets left="60.0" />
+         </padding>
+      </VBox>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #808080;" GridPane.rowIndex="2">
+        <buttons>
+          <Button mnemonicParsing="false" text="Aceptar" />
+            <Button mnemonicParsing="false" text="Cancelar" />
+        </buttons>
+      </ButtonBar>
+      <TextField text="Aplicacion Avanzada" />
+      <Button mnemonicParsing="false" text="Salir" GridPane.columnIndex="1" />
+      <BorderPane prefHeight="126.0" prefWidth="188.0" style="-fx-background-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" text="Button4">
+                     <HBox.margin>
+                        <Insets top="60.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Button5">
+                     <HBox.margin>
+                        <Insets top="60.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Button6">
+                     <HBox.margin>
+                        <Insets top="60.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <top>
+            <HBox prefHeight="31.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" text="Button1" />
+                  <Button mnemonicParsing="false" text="Button2" />
+                  <Button mnemonicParsing="false" text="Button3" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

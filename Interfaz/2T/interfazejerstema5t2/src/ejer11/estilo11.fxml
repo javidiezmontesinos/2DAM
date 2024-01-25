@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="ejer11.SimpleController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Separator prefHeight="63.0" prefWidth="300.0" visible="false" />
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Operador 1" />
+                        <Separator prefHeight="0.0" prefWidth="55.0" visible="false" />
+                        <TextField fx:id="operador1TextField" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Operador 2" />
+                        <Separator prefHeight="0.0" prefWidth="55.0" visible="false" />
+                        <TextField fx:id="operador2TextField" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+            <children>
+                <Button fx:id="limpiar" mnemonicParsing="false" text="Limpiar" />
+                <Separator prefHeight="4.0" prefWidth="34.0" visible="false" />
+                <Button fx:id="salir" mnemonicParsing="false" text="Salir" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </HBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+            <children>
+                <Button fx:id="sumar" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Suma" onAction="#sumar" />
+                <Button fx:id="restar" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Resta" onAction="#restar" />
+                <Button fx:id="multiplicar" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Multiplicacion" onAction="#multiplicar" />
+                <Button fx:id="dividir" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Division" onAction="#dividir" />
+            </children>
+        </VBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:" />
+                <Separator prefHeight="0.0" prefWidth="55.0" visible="false" />
+                <Label fx:id="resultadoLabel" text="-" />
+            </children>
+        </HBox>
+    </children>
+</GridPane>
