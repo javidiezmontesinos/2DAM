@@ -1,36 +1,27 @@
 package application;
 	
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
 	@Override
-	public void init() throws Exception{
-		super.init();
-		System.out.println("metodo init() llamado.");
+	public void start(Stage primaryStage) throws Exception {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("estiloapli.fxml"));
+		Parent root = loader.load();
+
+		primaryStage.setTitle("Ejercicio 10 layaouts");
+		primaryStage.setScene(new Scene(root, 600, 300));
+		primaryStage.show();
 	}
-	public void start(Stage primaryStage) {
-		try {
-			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setScene(scene);
-			primaryStage.show();
-			System.out.println("Metodo start() llamado.");
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public void stop() throws Exception{
-		super.stop();
-		System.out.println("metodo stop() llamado");
-	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
+
+
 }

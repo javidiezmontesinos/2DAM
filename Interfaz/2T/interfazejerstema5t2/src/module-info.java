@@ -16,7 +16,8 @@ module ejerstema5t2 {
     exports ejer9;
     exports ejer10;
     
-    
+  
+    exports application;
     
     opens ejer11 to javafx.fxml;
    
