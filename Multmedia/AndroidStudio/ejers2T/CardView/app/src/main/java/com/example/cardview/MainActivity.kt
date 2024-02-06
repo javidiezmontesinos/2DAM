@@ -9,7 +9,7 @@ import androidx.cardview.widget.CardView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 
-class CardViewActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var tvIngresos: TextView
     private val incrementoDeIngresos = 100

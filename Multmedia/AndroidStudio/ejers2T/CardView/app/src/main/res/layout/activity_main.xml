@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="12dp"
-    android:layout_marginLeft="0dp"
     android:paddingVertical="32dp"
-    tools:context=".CardViewActivity">
+    tools:context=".MainActivity">
 
     <!-- CardViews fondo lila-->
     <androidx.cardview.widget.CardView
@@ -23,7 +22,7 @@
         app:cardBackgroundColor="@color/morado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        >
+        android:contentDescription="Descripción del CardView 1">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -37,7 +36,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="Imagen de frío" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -51,7 +51,8 @@
         app:cardBackgroundColor="@color/teal_200"
         app:layout_constraintStart_toEndOf="@+id/cardView1"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:contentDescription="Descripción del CardView 2">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -65,7 +66,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="Imagen de casa" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -81,7 +83,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/cardView4"
         app:layout_constraintTop_toBottomOf="@id/cardView1"
-        app:cardBackgroundColor="@color/black">
+        app:cardBackgroundColor="@color/black"
+        android:contentDescription="Descripción del CardView 3">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -109,7 +112,8 @@
         app:layout_constraintStart_toEndOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView2"
-        app:cardBackgroundColor="@color/morado">
+        app:cardBackgroundColor="@color/morado"
+        android:contentDescription="Descripción del CardView 4">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -124,7 +128,8 @@
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20dp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:contentDescription="Descripción del texto de ingresos" />
 
             <TextView
                 android:id="@+id/tvIngresos"
@@ -133,7 +138,8 @@
                 android:textColor="@color/black"
                 android:textSize="38sp"
                 android:textStyle="bold"
-                android:text="0" />
+                android:text="0"
+                android:contentDescription="Descripción del valor de ingresos" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -148,7 +154,8 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_menor"
                     app:backgroundTint="@color/black"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    android:contentDescription="Descripción del botón Menor" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnMayor"
@@ -156,7 +163,8 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_mayor"
                     app:backgroundTint="@color/black"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    android:contentDescription="Descripción del botón Mayor" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -175,7 +183,8 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        android:contentDescription="Descripción del CardView de la edad">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -190,7 +199,8 @@
                 android:text="Edad"
                 android:textSize="30dp"
                 android:textAllCaps="true"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:contentDescription="Descripción del título de edad" />
 
             <TextView
                 android:id="@+id/tvAnos"
@@ -199,7 +209,8 @@
                 android:text="año/s"
                 android:textColor="@color/white"
                 android:textSize="38sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:contentDescription="Descripción del valor de la edad" />
 
             <com.google.android.material.slider.RangeSlider
                 android:id="@+id/rsEdad"
@@ -207,7 +218,8 @@
                 android:layout_height="wrap_content"
                 android:stepSize="1"
                 android:valueFrom="1"
-                android:valueTo="100" />
+                android:valueTo="100"
+                android:contentDescription="Descripción del RangeSlider de Edad" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -223,7 +235,8 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/cardView6"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Descripción del CardView de botón">
 
         <!-- Contenido del CardView -->
         <LinearLayout
@@ -241,11 +254,10 @@
                 android:layout_height="wrap_content"
                 android:text="Aceptar"
                 android:gravity="center"
-                android:onClick="onBotonDentroCardViewClick" />
+                android:onClick="onBotonDentroCardViewClick"
+                android:contentDescription="Descripción del botón Aceptar" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
