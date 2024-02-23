@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765525894638",
+    "project_id": "empresassimulacro2t",
+    "storage_bucket": "empresassimulacro2t.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765525894638:android:e5144e47bd5133ecaf9aff",
+        "android_client_info": {
+          "package_name": "com.example.simulacro2t"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyWA29I0mvxiDz_nBRD2PHTIOFmiBDkhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
